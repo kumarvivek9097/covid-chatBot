@@ -2,7 +2,7 @@ from flask import Flask, request, make_response
 import json
 from api import Api
 from database import Log
-from sendEMail import GMailClient
+from sendEmail import GMailClient
 from pymongo import MongoClient
 app = Flask(__name__)
 

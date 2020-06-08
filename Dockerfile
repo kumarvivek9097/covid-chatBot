@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install \
   -y --no-install-recommends python3 python3-pip python3-dev build-essential python3-virtualenv
 
 COPY . /app
+#COPY ./requirements.txt /app
 WORKDIR /app
 
 # Install dependencies:

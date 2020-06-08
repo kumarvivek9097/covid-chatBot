@@ -7,8 +7,9 @@ class Log:
         self.date = self.now.date()
         self.current_time = self.now.strftime("%H:%M:%S")
 
-    def saveConversations(self, sessionID, user_query, parameters, bot_message, intent, dbConn):
-        my_dict = {"sessionID": sessionID, "User Query": user_query, "User Intent": intent, "Parameters": parameters, "Bot": bot_message, "Date": str(self.date) + "/" + str(self.current_time)}
+    def saveConversations(self, session_id, user_query, parameters, bot_message, intent, dbConn):
+        my_dict = {"sessionID": session_id, "User Query": user_query, "User Intent": intent, "Parameters": parameters,
+                   "Bot": bot_message, "Date": str(self.date) + "/" + str(self.current_time)}
         records = dbConn.chat_record
         records.insert_one(my_dict)
 

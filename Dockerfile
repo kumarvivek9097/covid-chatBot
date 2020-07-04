@@ -15,8 +15,9 @@ WORKDIR /app
 RUN pip3 install --upgrade pip
 RUN pip3 install -r requirements.txt
 
-EXPOSE 5000
-ENTRYPOINT [ "python3" ]
+EXPOSE $PORT
+#ENTRYPOINT [ "python3" ]
 
 # Run the application:
-CMD [ "app.py" ]
+#CMD [ "app.py" ]
+CMD gunicorn --bind 0.0.0.0:$PORT app:app

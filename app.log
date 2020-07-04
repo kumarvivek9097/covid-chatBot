@@ -1,0 +1,44 @@
+2020-06-12 16:44:51,236:__main__:intent - search_state
+2020-06-12 16:44:51,236:__main__:Biaaahaaaar not a valid indian state name
+2020-06-12 16:45:33,960:__main__:intent - search_district
+2020-06-12 16:45:37,926:__main__:search_district executed SUCCESSFULLY
+2020-06-12 16:47:47,040:__main__:intent - search_district
+2020-06-12 16:47:47,041:__main__:Saaaaran not a valid indian district name
+2020-06-12 16:48:10,408:__main__:intent - search_district - yes
+2020-06-12 16:48:20,119:__main__:search_district - yes executed SUCCESSFULLY
+2020-06-12 16:51:23,102:__main__:intent - search_country
+2020-06-12 16:51:29,346:__main__:search_country executed SUCCESSFULLY
+2020-06-12 16:51:39,356:__main__:intent - search_country
+2020-06-12 16:53:50,731:__main__:intent - search_country - yes
+2020-06-12 16:53:58,552:__main__:search_country - yes executed SUCCESSFULLY
+2020-06-12 16:54:37,879:__main__:intent - search_world
+2020-06-12 16:54:42,428:__main__:search_world executed SUCCESSFULLY
+2020-06-12 16:55:05,674:__main__:intent - search_world - yes
+2020-06-12 16:55:09,650:__main__:search_world - yes executed SUCCESSFULLY
+2020-06-12 16:56:12,623:__main__:intent - today_cases
+2020-06-12 16:56:18,183:__main__:today_cases executed SUCCESSFULLY
+2020-06-12 16:56:47,940:__main__:intent - zone
+2020-06-12 16:56:51,443:__main__:zone executed SUCCESSFULLY
+2020-06-12 16:56:57,741:__main__:intent - zone
+2020-06-12 16:56:57,741:__main__:Bihaaaaaaar not a valid indian state name
+2020-06-12 16:57:31,808:__main__:intent - summary
+2020-06-12 16:57:35,499:__main__:summary executed SUCCESSFULLY
+2020-06-12 16:58:49,494:__main__:intent - summary
+2020-06-12 16:58:54,769:__main__:summary executed SUCCESSFULLY
+2020-06-12 17:14:40,266:__main__:intent - summary
+2020-06-12 17:14:46,059:__main__:summary executed SUCCESSFULLY
+2020-06-12 17:15:53,990:__main__:intent - summary
+2020-06-12 17:15:57,644:__main__:summary executed SUCCESSFULLY
+2020-06-12 17:16:29,756:__main__:intent - summary
+2020-06-12 17:16:35,124:__main__:summary executed SUCCESSFULLY
+2020-06-12 18:22:39,730:__main__:intent - summary
+2020-06-12 18:29:07,287:__main__:intent - summary
+2020-06-12 18:29:11,527:__main__:summary executed SUCCESSFULLY
+2020-06-12 18:43:53,963:__main__:intent - summary
+2020-06-12 18:43:57,903:__main__:summary executed SUCCESSFULLY
+2020-06-12 18:44:29,364:__main__:intent - summary
+2020-06-12 18:44:32,268:__main__:summary executed SUCCESSFULLY
+2020-07-04 19:18:28,595:app:intent - search_country
+2020-07-04 19:18:32,323:app:search_country executed SUCCESSFULLY
+2020-07-04 19:18:45,003:app:intent - search_state
+2020-07-04 19:18:48,502:app:search_state executed SUCCESSFULLY

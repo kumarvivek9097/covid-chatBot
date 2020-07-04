@@ -1,7 +1,16 @@
 import os
 import uuid
+import logging
 import seaborn as sns
 import matplotlib.pyplot as plt
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
+formatter = logging.Formatter('%(asctime)s:%(name)s:%(message)s')
+file_handler = logging.FileHandler('plotManager.log')
+file_handler.setLevel(logging.INFO)
+file_handler.setFormatter(formatter)
+logger.addHandler(file_handler)
 
 
 class Plot:
@@ -22,19 +31,21 @@ class Plot:
             os.mkdir(path)
         except OSError as error:
             print(error)
+            logger.exception("Folder already exists.")
 
         filename = str(uuid.uuid4().hex)
         file_path = path + "/" + filename + ".png"
         ax.figure.savefig(file_path)
         plt.close('all')
+        logger.info(title + " bar chart generated SUCCESSFULLY")
         return file_path
 
     def donut_chart(self, data, labels, title, session_id):
         explode = (0, 0.1, 0)
         fig, ax = plt.subplots(figsize=(8, 6))
         colors = ['#ff9999', '#66b3ff', '#99ff99']
-        ax.pie(data, explode=explode, labels=labels, autopct='%1.1f%%', colors=colors,
-                startangle=90, pctdistance=0.85, shadow=True)
+        ax.pie(data, explode=explode, labels=labels, autopct='%1.1f%%', colors=colors, startangle=90, pctdistance=0.85,
+               shadow=True)
 
         centre_circle = plt.Circle((0, 0), 0.70, fc='white')
         fig = plt.gcf()
@@ -49,8 +60,10 @@ class Plot:
             os.mkdir(path)
         except OSError as error:
             print(error)
+            logger.exception("Folder already exists.")
         filename = str(uuid.uuid4().hex)
         file_path = path+"/"+filename+".png"
         ax.figure.savefig(file_path)
         plt.close('all')
+        logger.info(title + " donut chart generated SUCCESSFULLY")
         return file_path

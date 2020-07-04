@@ -76,9 +76,3 @@ if [ -n "${BASH:-}" -o -n "${ZSH_VERSION:-}" ] ; then
     hash -r
 fi
 
-export EMAIL_ID="street.hawk492@gmail.com"
-export EMAIL_PASSWORD="kr\$vivek9097"
-
-
-
-
